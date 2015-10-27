@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="847" key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_height"/>
+	<item value="13" key="org.eclipse.cdt.uiformatter_page.line_wrapping_tab_page.last_category_index"/>
+	<item value="0" key="org.eclipse.cdt.uiformatter_page.white_space_tab_page.node"/>
+	<item value="-1727" key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_x"/>
+	<item value="true" key="org.eclipse.cdt.ui.codeformatter.create_profile_dialog.open_edit"/>
+	<item value="-170" key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_y"/>
+	<item value="0" key="org.eclipse.cdt.uiformatter_pagemodify_dialog.last_focus"/>
+	<item value="1278" key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_width"/>
+	<item value="Default C++ test template" key="LastUsedSourceTemplate"/>
+	<item value="Default C++ header template" key="LastUsedHeaderTemplate"/>
+	<item value="-1" key="formatter_page.modify_dialog_tab_page.last_focus_index"/>
+	<item value="0" key="org.eclipse.cdt.uiformatter_page.white_space.c_view.inner"/>
+	<section name="completion_proposal_size">
+		<item value="607" key="size.x"/>
+		<item value="596" key="size.y"/>
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="NewClassWizardPage">
+		<item value="false" key="stubSelected1"/>
+		<item value="false" key="testFileSelected"/>
+		<item value="true" key="namespaceSelected"/>
+		<item value="false" key="stubInline1"/>
+		<item value="true" key="stubVirtual1"/>
+		<item value="false" key="stubInline0"/>
+		<item value="false" key="stubSelected0"/>
+		<item value="std" key="namespace"/>
+	</section>
+	<section name="CRenameRefactoringInputPage">
+	</section>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+</section>

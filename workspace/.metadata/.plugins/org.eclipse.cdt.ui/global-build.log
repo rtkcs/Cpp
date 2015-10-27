@@ -1,0 +1,1450 @@
+23:17:37 **** Build of configuration Debug for project CppFundamentalsClasses ****
+make all 
+Building file: ../src/CRectangle2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CRectangle2.d" -MT"src/CRectangle2.d" -o "src/CRectangle2.o" "../src/CRectangle2.cpp"
+Finished building: ../src/CRectangle2.cpp
+ 
+Building file: ../src/CppFundamentalsClasses.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/CppFundamentalsClasses.d" -MT"src/CppFundamentalsClasses.d" -o "src/CppFundamentalsClasses.o" "../src/CppFundamentalsClasses.cpp"
+Finished building: ../src/CppFundamentalsClasses.cpp
+ 
+Building file: ../src/NestedClasses.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/NestedClasses.d" -MT"src/NestedClasses.d" -o "src/NestedClasses.o" "../src/NestedClasses.cpp"
+../src/NestedClasses.cpp: In function ‘int main()’:
+../src/NestedClasses.cpp:38:13: warning: unused variable ‘oc’ [-Wunused-variable]
+  OuterClass oc;
+             ^
+Finished building: ../src/NestedClasses.cpp
+ 
+Building target: CppFundamentalsClasses.exe
+Invoking: GCC C++ Linker
+g++  -o "CppFundamentalsClasses.exe"  ./src/CRectangle2.o ./src/CppFundamentalsClasses.o ./src/NestedClasses.o   
+Finished building target: CppFundamentalsClasses.exe
+ 
+23:17:49 **** Incremental Build of configuration Debug for project CppFundamentalsClasses ****
+make all 
+make: Nothing to be done for `all'.
+15:10:17 **** Rebuild of configuration Debug for project CFirst ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/CFirst.o ../src/CFirst.c 
+../src/CFirst.c: In function ‘mainnnnnn1’:
+../src/CFirst.c:28:2: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("A variable of type long occupies %d bytes.", sizeof(long));
+  ^
+../src/CFirst.c:33:2: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("\n\nA variable of type double occupies %d bytes.", sizeof(double));
+  ^
+../src/CFirst.c:42:2: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("A variable of type int occupies %d bytes", sizeof(int));
+  ^
+../src/CFirst.c:50:2: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("\nSize of data is %d, number of elements %d", sizeof(data), arraySize);
+  ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/TicTacToe.o ../src/TicTacToe.c 
+gcc -o CFirst.exe src/TicTacToe.o src/CFirst.o 
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 0 has invalid symbol index 11
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 1 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 2 has invalid symbol index 2
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 3 has invalid symbol index 2
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 4 has invalid symbol index 11
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 5 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 6 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 7 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 8 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 9 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 10 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 11 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 12 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 13 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 14 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 15 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 16 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 17 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 18 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 19 has invalid symbol index 21
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_line): relocation 0 has invalid symbol index 2
+/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+15:10:19 **** Build of configuration Debug for project CString ****
+make all 
+make: Nothing to be done for `all'.
+15:10:20 **** Build of configuration Debug for project CppFirst ****
+make all 
+Building file: ../src/EmptyPlaypen.cpp
+Invoking: GCC C++ Compiler
+g++ -I"C:\PF\YouCanProgramInCpp\fgw_headers" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/EmptyPlaypen.d" -MT"src/EmptyPlaypen.d" -o "src/EmptyPlaypen.o" "../src/EmptyPlaypen.cpp"
+../src/EmptyPlaypen.cpp:8:21: fatal error: playpen.h: No such file or directory
+ #include "playpen.h"
+                     ^
+compilation terminated.
+make: *** [src/EmptyPlaypen.o] Error 1
+15:10:21 **** Build of configuration Debug for project CppFundamentalTypes ****
+make all 
+Building file: ../src/Playpen.cpp
+Invoking: GCC C++ Compiler
+g++ -I"C:\PF\YouCanProgramInCpp\fgw_headers" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Playpen.d" -MT"src/Playpen.d" -o "src/Playpen.o" "../src/Playpen.cpp"
+../src/Playpen.cpp:9:21: fatal error: playpen.h: No such file or directory
+ #include "playpen.h"
+                     ^
+compilation terminated.
+make: *** [src/Playpen.o] Error 1
+15:10:21 **** Build of configuration Debug for project CppFundamentalsClasses ****
+make all 
+make: Nothing to be done for `all'.
+15:10:21 **** Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/OverloadingOperators.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/OverloadingOperators.d" -MT"src/OverloadingOperators.d" -o "src/OverloadingOperators.o" "../src/OverloadingOperators.cpp"
+Finished building: ../src/OverloadingOperators.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o   
+Finished building target: OverloadingOperators
+ 
+15:10:22 **** Rebuild of configuration Debug for project TerminalIO ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/DekaHexa.o ../src/DekaHexa.c 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/PripocetDane.o ../src/PripocetDane.c 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/TerminalIO.o ../src/TerminalIO.c 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/TypyCisel.o ../src/TypyCisel.c 
+../src/TypyCisel.c: In function ‘main2’:
+../src/TypyCisel.c:52:2: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(short) = %d Byte\n", sizeof(short));
+  ^
+../src/TypyCisel.c:53:2: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(int) = %d Byte\n", sizeof(int));
+  ^
+../src/TypyCisel.c:54:2: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(long) = %d Byte\n", sizeof(long));
+  ^
+../src/TypyCisel.c:57:2: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(char) = %d Byte\n", sizeof(char));
+  ^
+../src/TypyCisel.c:60:2: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(float) = %d Byte\n", sizeof(float));
+  ^
+../src/TypyCisel.c:61:2: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(double) = %d Byte\n", sizeof(double));
+  ^
+../src/TypyCisel.c:62:2: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+  printf("sizeof(long double) = %d Byte\n", sizeof(long double));
+  ^
+../src/TypyCisel.c:81:14: warning: unused variable ‘slo’ [-Wunused-variable]
+  signed long slo = -1;
+              ^
+../src/TypyCisel.c:73:15: warning: unused variable ‘ssh’ [-Wunused-variable]
+  signed short ssh = -1;
+               ^
+../src/TypyCisel.c:49:6: warning: unused variable ‘bTrue’ [-Wunused-variable]
+  int bTrue = 1;  //TRUE; int!=0 -> TRUE
+      ^
+../src/TypyCisel.c:48:6: warning: unused variable ‘bFalse’ [-Wunused-variable]
+  int bFalse = 0; //FALSE
+      ^
+../src/TypyCisel.c:45:14: warning: unused variable ‘ld’ [-Wunused-variable]
+  long double ld;
+              ^
+../src/TypyCisel.c:44:9: warning: unused variable ‘d’ [-Wunused-variable]
+  double d;   //presnos� asi na 20 desatinn�ch miest
+         ^
+../src/TypyCisel.c:43:8: warning: unused variable ‘f’ [-Wunused-variable]
+  float f;
+        ^
+../src/TypyCisel.c:41:16: warning: unused variable ‘uc’ [-Wunused-variable]
+  unsigned char uc; //min value=0  max value=255
+                ^
+../src/TypyCisel.c:40:7: warning: unused variable ‘c’ [-Wunused-variable]
+  char c;    //min value=-128 max value=127
+       ^
+../src/TypyCisel.c:38:16: warning: unused variable ‘ul’ [-Wunused-variable]
+  unsigned long ul;
+                ^
+../src/TypyCisel.c:37:14: warning: unused variable ‘sl’ [-Wunused-variable]
+  signed long sl;
+              ^
+../src/TypyCisel.c:36:7: warning: unused variable ‘l’ [-Wunused-variable]
+  long l;    // long == signed long
+       ^
+../src/TypyCisel.c:34:11: warning: unused variable ‘u’ [-Wunused-variable]
+  unsigned u;   //
+           ^
+../src/TypyCisel.c:33:15: warning: unused variable ‘ui’ [-Wunused-variable]
+  unsigned int ui;  // is the same as unsigned;
+               ^
+../src/TypyCisel.c:32:13: warning: unused variable ‘si’ [-Wunused-variable]
+  signed int si;
+             ^
+../src/TypyCisel.c:31:6: warning: unused variable ‘i’ [-Wunused-variable]
+  int i;    // int == signed int
+      ^
+../src/TypyCisel.c:29:17: warning: unused variable ‘us’ [-Wunused-variable]
+  unsigned short us;
+                 ^
+../src/TypyCisel.c:28:15: warning: unused variable ‘ss’ [-Wunused-variable]
+  signed short ss;
+               ^
+../src/TypyCisel.c:27:8: warning: unused variable ‘s’ [-Wunused-variable]
+  short s;   //short == signed short
+        ^
+../src/TypyCisel.c:16:6: warning: unused variable ‘lokalnaPremennta’ [-Wunused-variable]
+  int lokalnaPremennta; //lokalna premenna
+      ^
+../src/TypyCisel.c:88:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/VelkePismena.o ../src/VelkePismena.c 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/Priemer.o ../src/Priemer.c 
+../src/Priemer.c: In function ‘main’:
+../src/Priemer.c:12:2: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+  scanf("\n\n %f %f %f", &f1, &f2, &f3);
+  ^
+../src/Priemer.c:12:2: warning: incompatible implicit declaration of built-in function ‘scanf’ [enabled by default]
+../src/Priemer.c:14:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("\n%f %f %f", f1, f2, f3);
+  ^
+../src/Priemer.c:14:2: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+../src/Priemer.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/Obdlznik.o ../src/Obdlznik.c 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/CelaCastCisla.o ../src/CelaCastCisla.c 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/Definicie.o ../src/Definicie.c 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/Delenie.o ../src/Delenie.c 
+../src/Delenie.c: In function ‘main3’:
+../src/Delenie.c:23:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("\n");
+  ^
+../src/Delenie.c:23:2: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+../src/Delenie.c:27:6: warning: unused variable ‘im’ [-Wunused-variable]
+  int im = 10;
+      ^
+../src/Delenie.c:21:8: warning: unused variable ‘result4’ [-Wunused-variable]
+  float result4 = f / f; // float / float = float
+        ^
+../src/Delenie.c:20:8: warning: unused variable ‘result3’ [-Wunused-variable]
+  float result3 = f / i; // float / int = float
+        ^
+../src/Delenie.c:19:8: warning: unused variable ‘result2’ [-Wunused-variable]
+  float result2 = i / f; // int / float = float
+        ^
+../src/Delenie.c:17:8: warning: unused variable ‘result1’ [-Wunused-variable]
+  int   result1 = i / i;  // int / int = int
+        ^
+../src/Delenie.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o src/Ascii.o ../src/Ascii.c 
+gcc -o TerminalIO.exe src/VelkePismena.o src/TypyCisel.o src/TerminalIO.o src/PripocetDane.o src/Priemer.o src/Obdlznik.o src/Delenie.o src/DekaHexa.o src/Definicie.o src/CelaCastCisla.o src/Ascii.o 
+15:10:30 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+make: Nothing to be done for `all'.
+15:32:14 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/OverloadingOperators.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/OverloadingOperators.d" -MT"src/OverloadingOperators.d" -o "src/OverloadingOperators.o" "../src/OverloadingOperators.cpp"
+Finished building: ../src/OverloadingOperators.cpp
+ 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:29:1: error: expected ‘;’ after class definition
+ }
+ ^
+../src/rational.cpp:9:7: error: redefinition of ‘class rational’
+ class rational{
+       ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:13:7: error: previous definition of ‘class rational’
+ class rational{
+       ^
+../src/rational.cpp:12:1: error: expected unqualified-id at end of input
+ }
+ ^
+make: *** [src/rational.o] Error 1
+15:33:00 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:13:1: error: new types may not be defined in a return type
+ class rational{
+ ^
+../src/rational.h:13:1: note: (perhaps a semicolon is missing after the definition of ‘rational’)
+../src/rational.cpp:9:20: error: return type specification for constructor invalid
+ rational::rational():n(0), d(1){}
+                    ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:27:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:26:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:9:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:27:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:26:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:10:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+make: *** [src/rational.o] Error 1
+15:34:02 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:27:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:26:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:9:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:27:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:26:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:10:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+Finished building: ../src/rational.cpp
+ 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+../src/testrational.cpp: In function ‘int main()’:
+../src/testrational.cpp:11:3: error: ‘rational’ was not declared in this scope
+   rational r;
+   ^
+../src/testrational.cpp:11:12: error: expected ‘;’ before ‘r’
+   rational r;
+            ^
+../src/testrational.cpp:12:3: error: ‘cout’ is not a member of ‘std’
+   std::cout << r.numerator() << "/" << r.denominator() << '\n';
+   ^
+../src/testrational.cpp:12:16: error: ‘r’ was not declared in this scope
+   std::cout << r.numerator() << "/" << r.denominator() << '\n';
+                ^
+../src/testrational.cpp:14:3: error: ‘cout’ is not a member of ‘std’
+   std::cout << r.numerator() << "/" << r.denominator() << '\n';
+   ^
+../src/testrational.cpp:16:10: error: expected type-specifier before ‘rational’
+  }catch( rational::exception const &r){
+          ^
+../src/testrational.cpp:16:18: error: expected ‘)’ before ‘::’ token
+  }catch( rational::exception const &r){
+                  ^
+../src/testrational.cpp:16:18: error: expected ‘{’ before ‘::’ token
+../src/testrational.cpp:16:18: error: ‘::exception’ has not been declared
+../src/testrational.cpp:16:30: error: expected ‘;’ before ‘const’
+  }catch( rational::exception const &r){
+                              ^
+make: *** [src/testrational.o] Error 1
+15:35:45 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+../src/testrational.cpp: In function ‘int main()’:
+../src/testrational.cpp:15:3: error: ‘cout’ is not a member of ‘std’
+   std::cout << r.numerator() << "/" << r.denominator() << '\n';
+   ^
+../src/testrational.cpp:17:3: error: ‘cout’ is not a member of ‘std’
+   std::cout << r.numerator() << "/" << r.denominator() << '\n';
+   ^
+../src/testrational.cpp:20:3: error: ‘cerr’ is not a member of ‘std’
+   std::cerr << "Exception from rational caught.\n";
+   ^
+make: *** [src/testrational.o] Error 1
+15:36:22 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+../src/testrational.cpp:8:17: fatal error: std.h: No such file or directory
+ #include "std.h"
+                 ^
+compilation terminated.
+make: *** [src/testrational.o] Error 1
+15:37:13 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+../src/testrational.cpp: In function ‘int main()’:
+../src/testrational.cpp:15:3: error: ‘cout’ is not a member of ‘std’
+   std::cout << r.numerator() << "/" << r.denominator() << '\n';
+   ^
+../src/testrational.cpp:17:3: error: ‘cout’ is not a member of ‘std’
+   std::cout << r.numerator() << "/" << r.denominator() << '\n';
+   ^
+../src/testrational.cpp:20:3: error: ‘cerr’ is not a member of ‘std’
+   std::cerr << "Exception from rational caught.\n";
+   ^
+make: *** [src/testrational.o] Error 1
+15:37:58 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+../src/testrational.cpp: In function ‘int main()’:
+../src/testrational.cpp:16:3: error: ‘cout’ is not a member of ‘std’
+   std::cout << r.numerator() << "/" << r.denominator() << '\n';
+   ^
+../src/testrational.cpp:18:3: error: ‘cout’ is not a member of ‘std’
+   std::cout << r.numerator() << "/" << r.denominator() << '\n';
+   ^
+../src/testrational.cpp:21:3: error: ‘cerr’ is not a member of ‘std’
+   std::cerr << "Exception from rational caught.\n";
+   ^
+make: *** [src/testrational.o] Error 1
+15:39:11 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+./src/testrational.o: In function `main':
+/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/Debug/../src/testrational.cpp:13: multiple definition of `main'
+./src/OverloadingOperators.o:/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/Debug/../src/OverloadingOperators.cpp:12: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [OverloadingOperators] Error 1
+15:39:29 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/OverloadingOperators.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/OverloadingOperators.d" -MT"src/OverloadingOperators.d" -o "src/OverloadingOperators.o" "../src/OverloadingOperators.cpp"
+Finished building: ../src/OverloadingOperators.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+15:39:38 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+make: Nothing to be done for `all'.
+15:42:49 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+15:47:48 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:30:1: error: ‘ostream’ in namespace ‘std’ does not name a type
+ std::ostream & send_to(std::ostream&)const;
+ ^
+../src/rational.h:31:8: error: ‘ostream’ in namespace ‘std’ does not name a type
+ inline std::ostream & operator<<(std::ostream & out, rational const & r){
+        ^
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:27:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:26:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:9:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:27:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:26:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:10:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+../src/rational.cpp: At global scope:
+../src/rational.cpp:14:1: error: ‘ostream’ in namespace ‘std’ does not name a type
+ std::ostream & rational::send_to(std::ostream & out)const{
+ ^
+make: *** [src/rational.o] Error 1
+15:48:15 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:25:2: error: ‘ostream’ in namespace ‘std’ does not name a type
+  std::ostream & send_to(std::ostream&)const;
+  ^
+../src/rational.h:26:9: error: ‘ostream’ in namespace ‘std’ does not name a type
+  inline std::ostream & operator<<(std::ostream & out, rational const & r){
+         ^
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:32:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:31:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:9:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:32:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:31:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:10:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+../src/rational.cpp: At global scope:
+../src/rational.cpp:14:1: error: ‘ostream’ in namespace ‘std’ does not name a type
+ std::ostream & rational::send_to(std::ostream & out)const{
+ ^
+make: *** [src/rational.o] Error 1
+15:48:37 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:29:73: error: ‘std::ostream& rational::operator<<(std::ostream&, const rational&)’ must take exactly one argument
+  inline std::ostream & operator<<(std::ostream & out, rational const & r){
+                                                                         ^
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:35:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:34:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:9:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:35:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:34:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:10:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+../src/rational.cpp: In member function ‘std::ostream& rational::send_to(std::ostream&) const’:
+../src/rational.cpp:16:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/rational.o] Error 1
+16:26:47 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:29:73: error: ‘std::ostream& rational::operator<<(std::ostream&, const rational&)’ must take exactly one argument
+  inline std::ostream & operator<<(std::ostream & out, const rational & r){
+                                                                         ^
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:35:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:34:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:9:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:35:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:34:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:10:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+../src/rational.cpp: In member function ‘std::ostream& rational::send_to(std::ostream&) const’:
+../src/rational.cpp:16:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/rational.o] Error 1
+16:32:03 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:9:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:10:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+../src/rational.cpp: At global scope:
+../src/rational.cpp:14:16: error: prototype for ‘std::ostream& rational::send_to(std::ostream&) const’ does not match any in class ‘rational’
+ std::ostream & rational::send_to(std::ostream & out)const{
+                ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:28:23: error: candidate is: const ostream& rational::send_to(std::ostream&)
+  const std::ostream & send_to(std::ostream&);
+                       ^
+make: *** [src/rational.o] Error 1
+16:32:16 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:9:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:10:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+../src/rational.cpp: In member function ‘std::ostream& rational::send_to(std::ostream&) const’:
+../src/rational.cpp:16:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/rational.cpp
+ 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+16:33:27 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+16:40:35 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:31:2: error: ‘std’ does not name a type
+  std:istream & get_from(std:istream &)const;
+  ^
+../src/rational.h:33:73: error: ‘std::ostream& rational::operator<<(std::ostream&, const rational&)’ must take exactly one argument
+  inline std::ostream & operator<<(std::ostream & out, const rational & r){
+                                                                         ^
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:40:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:39:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:9:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:40:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:39:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:10:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+../src/rational.cpp: At global scope:
+../src/rational.cpp:19:52: error: no ‘std::istream& rational::get_from(std::istream&)’ member function declared in class ‘rational’
+ std::istream & rational::get_from(std::istream & in){
+                                                    ^
+make: *** [src/rational.o] Error 1
+16:41:19 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:31:2: error: ‘std’ does not name a type
+  std:istream & get_from(std:istream &)const;
+  ^
+../src/rational.h:33:73: error: ‘std::ostream& rational::operator<<(std::ostream&, const rational&)’ must take exactly one argument
+  inline std::ostream & operator<<(std::ostream & out, const rational & r){
+                                                                         ^
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:40:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:39:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:40:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:39:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+../src/rational.cpp: At global scope:
+../src/rational.cpp:21:52: error: no ‘std::istream& rational::get_from(std::istream&)’ member function declared in class ‘rational’
+ std::istream & rational::get_from(std::istream & in){
+                                                    ^
+make: *** [src/rational.o] Error 1
+16:41:49 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:31:2: error: ‘std’ does not name a type
+  std:istream & get_from(std:istream &);
+  ^
+../src/rational.h:33:73: error: ‘std::ostream& rational::operator<<(std::ostream&, const rational&)’ must take exactly one argument
+  inline std::ostream & operator<<(std::ostream & out, const rational & r){
+                                                                         ^
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:40:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:39:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:40:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:39:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+../src/rational.cpp: At global scope:
+../src/rational.cpp:21:52: error: no ‘std::istream& rational::get_from(std::istream&)’ member function declared in class ‘rational’
+ std::istream & rational::get_from(std::istream & in){
+                                                    ^
+make: *** [src/rational.o] Error 1
+16:42:24 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:31:17: error: expected ‘;’ at end of member declaration
+  std::istream & get_from(std:istream &);
+                 ^
+../src/rational.h:31:29: error: expected ‘)’ before ‘:’ token
+  std::istream & get_from(std:istream &);
+                             ^
+../src/rational.h:33:73: error: ‘std::ostream& rational::operator<<(std::ostream&, const rational&)’ must take exactly one argument
+  inline std::ostream & operator<<(std::ostream & out, const rational & r){
+                                                                         ^
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:40:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:39:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+../src/rational.cpp:11:1: error: uninitialized reference member ‘rational::get_from’ [-fpermissive]
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:40:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:39:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+../src/rational.cpp:12:1: error: uninitialized reference member ‘rational::get_from’ [-fpermissive]
+../src/rational.cpp: At global scope:
+../src/rational.cpp:21:52: error: no ‘std::istream& rational::get_from(std::istream&)’ member function declared in class ‘rational’
+ std::istream & rational::get_from(std::istream & in){
+                                                    ^
+make: *** [src/rational.o] Error 1
+16:42:45 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:33:73: error: ‘std::ostream& rational::operator<<(std::ostream&, const rational&)’ must take exactly one argument
+  inline std::ostream & operator<<(std::ostream & out, const rational & r){
+                                                                         ^
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:40:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:39:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:40:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:39:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+make: *** [src/rational.o] Error 1
+16:44:33 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:33:73: error: ‘std::ostream& rational::operator<<(std::ostream&, const rational&)’ must take exactly one argument
+  inline std::ostream & operator<<(std::ostream & out, const rational & r){
+                                                                         ^
+../src/rational.h:37:66: error: ‘std::istream& rational::operator>>(std::istream&, rational&)’ must take exactly one argument
+  inline std::istream & operator>>(std::istream & in, rational & r){
+                                                                  ^
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:44:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:43:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:44:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:43:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+make: *** [src/rational.o] Error 1
+16:46:33 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:33:73: error: ‘std::ostream& rational::operator<<(std::ostream&, const rational&)’ must take exactly one argument
+  inline std::ostream & operator<<(std::ostream & out, const rational & r){
+                                                                         ^
+../src/rational.h:37:66: error: ‘std::istream& rational::operator>>(std::istream&, rational&)’ must take exactly one argument
+  inline std::istream & operator>>(std::istream & in, rational & r){
+                                                                  ^
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:44:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:43:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:44:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:43:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+make: *** [src/rational.o] Error 1
+16:46:48 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:44:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:43:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:44:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:43:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+Finished building: ../src/rational.cpp
+ 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+16:47:47 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+../src/testrational.cpp: In function ‘int main()’:
+../src/testrational.cpp:27:26: error: expected primary-expression before ‘)’ token
+   r.get_from(std::istream);
+                          ^
+make: *** [src/testrational.o] Error 1
+16:48:34 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+../src/testrational.cpp: In function ‘int main()’:
+../src/testrational.cpp:27:26: error: expected primary-expression before ‘&’ token
+   r.get_from(std::istream&);
+                          ^
+../src/testrational.cpp:27:27: error: expected primary-expression before ‘)’ token
+   r.get_from(std::istream&);
+                           ^
+make: *** [src/testrational.o] Error 1
+16:48:56 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+../src/testrational.cpp: In function ‘int main()’:
+../src/testrational.cpp:27:27: error: expected primary-expression before ‘)’ token
+   r.get_from(&std::istream);
+                           ^
+make: *** [src/testrational.o] Error 1
+16:50:43 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+../src/testrational.cpp: In function ‘int main()’:
+../src/testrational.cpp:27:26: error: expected primary-expression before ‘&’ token
+   r.get_from(std::istream&);
+                          ^
+../src/testrational.cpp:27:27: error: expected primary-expression before ‘)’ token
+   r.get_from(std::istream&);
+                           ^
+make: *** [src/testrational.o] Error 1
+16:52:24 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h:33:73: error: ‘std::ostream& rational::operator<<(std::ostream&, const rational&)’ must take exactly one argument
+  inline std::ostream & operator<<(std::ostream & out, const rational & r){
+                                                                         ^
+../src/rational.h:37:66: error: ‘std::istream& rational::operator>>(std::istream&, rational&)’ must take exactly one argument
+  inline std::istream & operator>>(std::istream & in, rational & r){
+                                                                  ^
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:44:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:43:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:44:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:43:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+make: *** [src/rational.o] Error 1
+16:53:41 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+Finished building: ../src/rational.cpp
+ 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+../src/testrational.cpp: In function ‘int main()’:
+../src/testrational.cpp:27:50: error: expected primary-expression before ‘&’ token
+   std::istream & stream = r.get_from(std::istream&);
+                                                  ^
+../src/testrational.cpp:27:51: error: expected primary-expression before ‘)’ token
+   std::istream & stream = r.get_from(std::istream&);
+                                                   ^
+../src/testrational.cpp:27:18: warning: unused variable ‘stream’ [-Wunused-variable]
+   std::istream & stream = r.get_from(std::istream&);
+                  ^
+make: *** [src/testrational.o] Error 1
+16:54:10 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+../src/testrational.cpp: In function ‘int main()’:
+../src/testrational.cpp:27:26: error: expected primary-expression before ‘)’ token
+   r.get_from(std::istream);
+                          ^
+make: *** [src/testrational.o] Error 1
+16:55:09 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+16:55:13 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+make: Nothing to be done for `all'.
+16:55:38 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+Finished building: ../src/rational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+16:55:42 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+make: Nothing to be done for `all'.
+16:55:47 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+make: Nothing to be done for `all'.
+16:56:17 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+Finished building: ../src/rational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+16:56:51 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+16:56:56 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+make: Nothing to be done for `all'.
+16:57:11 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+make: Nothing to be done for `all'.
+16:58:32 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+../src/rational.cpp:24:17: warning: multi-character character constant [-Wmultichar]
+  if(in.get() != '/n') throw rational::bad_data();
+                 ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+Finished building: ../src/rational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+16:59:06 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+Finished building: ../src/rational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+16:59:12 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+make: Nothing to be done for `all'.
+16:59:51 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+16:59:55 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+make: Nothing to be done for `all'.
+17:35:36 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+Finished building: ../src/rational.cpp
+ 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+17:35:43 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+make: Nothing to be done for `all'.
+17:36:57 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+17:38:12 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/rational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/rational.d" -MT"src/rational.d" -o "src/rational.o" "../src/rational.cpp"
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational()’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:11:1: warning:   when initialized here [-Wreorder]
+ rational::rational():n(0), d(1){}
+ ^
+In file included from ../src/rational.cpp:7:0:
+../src/rational.h: In constructor ‘rational::rational(long int, long int)’:
+../src/rational.h:37:7: warning: ‘rational::n’ will be initialized after [-Wreorder]
+  long n;
+       ^
+../src/rational.h:36:7: warning:   ‘long int rational::d’ [-Wreorder]
+  long d;
+       ^
+../src/rational.cpp:12:1: warning:   when initialized here [-Wreorder]
+ rational::rational(long numer, long denom):n(numer), d(denom){}
+ ^
+Finished building: ../src/rational.cpp
+ 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+17:38:17 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+make: Nothing to be done for `all'.
+17:39:00 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 
+17:40:26 **** Incremental Build of configuration Debug for project OverloadingOperators ****
+make all 
+Building file: ../src/testrational.cpp
+Invoking: GCC C++ Compiler
+g++ -I"/home/UX/rtakacsux/Project/Cpp/workspace/OverloadingOperators/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/testrational.d" -MT"src/testrational.d" -o "src/testrational.o" "../src/testrational.cpp"
+Finished building: ../src/testrational.cpp
+ 
+Building target: OverloadingOperators
+Invoking: GCC C++ Linker
+g++  -o "OverloadingOperators"  ./src/OverloadingOperators.o ./src/rational.o ./src/testrational.o   
+Finished building target: OverloadingOperators
+ 

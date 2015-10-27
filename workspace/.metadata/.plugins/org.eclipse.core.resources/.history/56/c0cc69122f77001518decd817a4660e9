@@ -1,0 +1,15 @@
+/*
+ * rational.cpp
+ *
+ *  Created on: Oct 20, 2015
+ *      Author: rtakacsux
+ */
+#include "rational.h"
+
+class rational{
+
+public:
+}
+
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;OverloadingOperators/src/rational.cpp&apos; to &apos;testrational.cpp&apos;" description="Rename resource &apos;rational.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/rational.cpp" name="testrational.cpp" stamp="1445347716206" updateReferences="true"/>
+</session>

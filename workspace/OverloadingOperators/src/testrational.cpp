@@ -11,7 +11,7 @@
 #include <istream>
 #include "rational.h"
 
-int main(){
+int mainRational(){
 
 	try{
 		rational r;

@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;TerminalIO/src/ascii&apos; to &apos;Ascii.c&apos;" description="Rename resource &apos;ascii&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ascii" name="Ascii.c" stamp="1361314799743" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;TerminalIO/src/DekaHexa&apos; to &apos;DekaHexa.c&apos;" description="Rename resource &apos;DekaHexa&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/DekaHexa" name="DekaHexa.c" stamp="1361315694140" updateReferences="true"/>
-</session>

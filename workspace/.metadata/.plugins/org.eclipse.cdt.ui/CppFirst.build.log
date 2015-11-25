@@ -1,8 +1,0 @@
-
-**** Build of configuration Debug for project CppFirst ****
-
-**** Internal Builder is used for build               ****
-g++ -IC:\PF\YouCanProgramInCpp\fgw_headers -O0 -g3 -Wall -c -fmessage-length=0 -o src\EmptyPlaypen.o ..\src\EmptyPlaypen.cpp
-g++ -LC:\PF\YouCanProgramInCpp\fgw_headers -o CppFirst.exe src\EmptyPlaypen.o src\CppFirst.o src\Cfoo.o src\ArraysInC.o -lfgw -lgdi32
-Build complete for project CppFirst
-Time consumed: 2323  ms.  

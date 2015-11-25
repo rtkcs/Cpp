@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;CString/src/DefiningConstants.c&apos; to &apos;DefiningVariables.c&apos;" description="Rename resource &apos;DefiningConstants.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/DefiningConstants.c" name="DefiningVariables.c" stamp="1335879627637" updateReferences="true"/>
-</session>

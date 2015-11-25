@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;CppFirst/src/ArraysInCpp&apos; to &apos;ArraysInCpp.cpp&apos;" description="Rename resource &apos;ArraysInCpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ArraysInCpp" name="ArraysInCpp.cpp" stamp="1325103612993" updateReferences="true"/>
-</session>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;CString/src/DefiningConstants&apos;" deleteContents="false" description="Delete resource &apos;CString/src/DefiningConstants&apos;" element1="/CString/src/DefiningConstants" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1335873182823"/>
-</session>

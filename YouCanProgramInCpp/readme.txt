@@ -29,4 +29,5 @@ make -f makefile.txt
 Description	Resource	Path	Location	Type
 cannot find -lgdi32	CppFundamentalTypes		 	C/C++ Problem
 
--lfgw
+Windows:	-lfgw;gdi32
+Linux: 		-lfgw;X11;pthread

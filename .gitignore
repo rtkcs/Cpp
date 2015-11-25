@@ -50,6 +50,7 @@ local.properties
 *.lo
 *.o
 *.obj
+*.d
 
 # Precompiled Headers
 *.gch

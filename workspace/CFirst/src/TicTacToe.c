@@ -6,7 +6,7 @@
  */
 
 #include <stdio.h>
-int main2(void) {
+int main(void) {
 	int player = 0; /* Player number - 1 or 2 */
 	int winner = 0; /* The winning player */
 	int choice = 0; /* Square selection number for turn */
@@ -42,7 +42,7 @@ int main2(void) {
 		} while (choice < 0 || choice > 9 || board[row][column] > '9');
 		/* Insert player symbol */
 		board[row][column] = (player == 1) ? 'X' : 'O';
-		/* Check for a winning line – diagonals first */
+		/* Check for a winning line ï¿½ diagonals first */
 		if ((board[0][0] == board[1][1] && board[0][0] == board[2][2])
 				|| (board[0][2] == board[1][1] && board[0][2] == board[2][0]))
 			winner = player;

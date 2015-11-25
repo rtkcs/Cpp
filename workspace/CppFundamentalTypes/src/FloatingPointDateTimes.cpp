@@ -10,7 +10,7 @@
 #include <exception>
 #include <cmath>
 
-int main(){
+int mainFloatinPoint(){
 
 
 	try{

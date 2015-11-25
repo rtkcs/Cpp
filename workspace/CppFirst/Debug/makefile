@@ -44,7 +44,7 @@ all: CppFirst.exe
 CppFirst.exe: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"C:\PF\YouCanProgramInCpp\fgw_headers" -o "CppFirst.exe" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L/home/UX/rtakacsux/Project/Cpp/YouCanProgramInCpp/unix_tutorial/fgw_headers/Release -o "CppFirst.exe" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -8,6 +8,7 @@
 #include <stddef.h>
 #include <iostream>
 #include <istream>
+#include <ostream>
 
 #ifndef RATIONAL_H_
 #define RATIONAL_H_

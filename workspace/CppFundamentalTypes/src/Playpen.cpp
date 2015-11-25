@@ -11,7 +11,7 @@
 #include <iostream>
 #include <exception>
 
-int mainPlaypen(){
+int main(){
 
 	try{
 

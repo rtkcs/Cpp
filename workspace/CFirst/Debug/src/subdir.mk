@@ -3,27 +3,24 @@
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
-CPP_SRCS += \
-../src/CRectangle2.cpp \
-../src/CppFundamentalsClasses.cpp \
-../src/NestedClasses.cpp 
+C_SRCS += \
+../src/CFirst.c \
+../src/TicTacToe.c 
 
 OBJS += \
-./src/CRectangle2.o \
-./src/CppFundamentalsClasses.o \
-./src/NestedClasses.o 
+./src/CFirst.o \
+./src/TicTacToe.o 
 
-CPP_DEPS += \
-./src/CRectangle2.d \
-./src/CppFundamentalsClasses.d \
-./src/NestedClasses.d 
+C_DEPS += \
+./src/CFirst.d \
+./src/TicTacToe.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-src/%.o: ../src/%.cpp
+src/%.o: ../src/%.c
 	@echo 'Building file: $<'
-	@echo 'Invoking: GCC C++ Compiler'
-	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	@echo 'Invoking: GCC C Compiler'
+	gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

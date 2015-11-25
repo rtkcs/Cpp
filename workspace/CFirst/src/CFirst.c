@@ -13,7 +13,10 @@
 
 /* Program 5.5 Using the & operator */
 
+
 int mainnnnnn1(void) {
+
+
 
 	/* declare some integer variables */
 	long a = 1L;
@@ -49,5 +52,5 @@ int mainnnnnn1(void) {
 	int arraySize = sizeof(data)/sizeof(data[0]);
 	printf("\nSize of data is %d, number of elements %d", sizeof(data), arraySize);
 
-	return EXIT_SUCCESS;
+	return 0;
 }

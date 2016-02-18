@@ -9,7 +9,7 @@
 #include "isbn10.h"
 
 
-int main(){
+int main1(){
 
 	try{
 
@@ -48,6 +48,8 @@ int main(){
 		std::cerr << "Program terminated with an exception.\n";
 		return 0;
 	}
+
+	return 0;
 }
 
 

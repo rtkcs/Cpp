@@ -9,7 +9,7 @@
 
 #include <cstdlib>
 
-int main(){
+int mainTestDeck(){
 	try{
 		std::srand(time(0));
 		deck d;

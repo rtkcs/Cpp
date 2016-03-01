@@ -19,9 +19,14 @@ int main(){
 
 	try{
 
+		//throw std::exception(); 	// Output: An exception occurred, no card object is detroyed
+
 		for(int i=0; i != numOfCards; i++){
 			d[i] = new card(card_value(i));	//everytime you use "new", you must also use "delete"
+			if(i==1) throw std::exception();	// only 2 card are destroyed
 		}
+
+		//throw std::exception();
 
 		std::random_shuffle(d, d + numOfCards);
 		for(int i=0; i!=numOfCards; i++){

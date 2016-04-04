@@ -11,7 +11,7 @@
 
 using namespace std;
 
-int main() {
+int main2() {
 
 	const int SCREEN_WIDTH = 800;
 	const int SCREEN_HEIGHT = 600;

@@ -76,7 +76,7 @@ void Screen::close() {
 void Screen::setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue){
 
 	//not efficient
-	//if(x < 0 || x > Screen::SCREEN_WIDTH || y < 0 || y > Screen::SCREEN_HEIGHT) return;
+	if(x < 0 || x > Screen::SCREEN_WIDTH || y < 0 || y > Screen::SCREEN_HEIGHT) return;
 
 	Uint32 color = 0;
 
@@ -96,6 +96,10 @@ void Screen::update(){
 	SDL_RenderClear(m_renderer);
 	SDL_RenderCopy(m_renderer, m_texture, NULL, NULL);
 	SDL_RenderPresent(m_renderer);
+}
+
+void Screen::clear(){
+	memset(m_buffer, 0x00, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
 }
 
 } /* namespace std */

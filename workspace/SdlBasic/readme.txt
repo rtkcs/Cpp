@@ -1,0 +1,1 @@
+SDL project with particles staticali standing on the screen and slowly changing color.

@@ -10,7 +10,7 @@
 namespace std {
 
 Screen::Screen() :
-		m_window(NULL), m_renderer(NULL), m_texture(NULL), m_buffer1(NULL) {
+		m_window(NULL), m_renderer(NULL), m_texture(NULL), m_buffer1(NULL), m_buffer2(NULL) {
 }
 
 bool Screen::init() {
@@ -40,6 +40,9 @@ bool Screen::init() {
 
 	m_buffer1 = new Uint32[SCREEN_WIDTH * SCREEN_HEIGHT];
 	memset(m_buffer1, 0x00, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
+
+	m_buffer2 = new Uint32[SCREEN_WIDTH * SCREEN_HEIGHT];
+	memset(m_buffer2, 0x00, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
 	//buffer[30000] = 0xFFFFFFFF;
 	/*
 	for (int i = 0; i < SCREEN_WIDTH * SCREEN_HEIGHT; i++) {
@@ -67,6 +70,7 @@ bool Screen::processEvents() {
 
 void Screen::close() {
 	delete[] m_buffer1;
+	delete[] m_buffer2;
 	SDL_DestroyRenderer(m_renderer);
 	SDL_DestroyTexture(m_texture);
 	SDL_DestroyWindow(m_window);
@@ -76,7 +80,7 @@ void Screen::close() {
 void Screen::setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue){
 
 	//not efficient
-	//if(x < 0 || x > Screen::SCREEN_WIDTH || y < 0 || y > Screen::SCREEN_HEIGHT) return;
+	if(x < 0 || x > Screen::SCREEN_WIDTH || y < 0 || y > Screen::SCREEN_HEIGHT) return;
 
 	Uint32 color = 0;
 
@@ -96,6 +100,52 @@ void Screen::update(){
 	SDL_RenderClear(m_renderer);
 	SDL_RenderCopy(m_renderer, m_texture, NULL, NULL);
 	SDL_RenderPresent(m_renderer);
+}
+
+
+void Screen::boxBlur(){
+	//swap buffers, pixel info is in m_buffer2
+	Uint32 *temp = m_buffer1;
+	m_buffer1 = m_buffer2;
+	m_buffer2 = temp;
+
+	for(int y=0; y<Screen::SCREEN_HEIGHT; y++){
+		for(int x=0; x<Screen::SCREEN_WIDTH; x++){
+
+			/*
+			 * 0 0 0
+			 * 0 1 0
+			 * 0 0 0
+			 */
+			int redTotal = 0;
+			int greenTotal = 0;
+			int blueTotal = 0;
+
+			for(int row=-1; row<=1; row++){
+				for(int col=-1;col<=1; col++){
+					int currentX = x + col;
+					int currentY = y + row;
+
+					if(currentX >-1 && currentX < Screen::SCREEN_WIDTH && currentY > -1 && currentY < Screen::SCREEN_HEIGHT){
+						Uint32 color = m_buffer2[currentY*SCREEN_WIDTH + currentX];
+
+						Uint8 red = color >> 24;
+						Uint8 green = color >> 16;
+						Uint8 blue = color >> 8;
+
+						redTotal += red;
+						greenTotal += green;
+						blueTotal += blue;
+					}
+				}
+			}
+			Uint8 red = redTotal / 9;
+			Uint8 green = greenTotal / 9;
+			Uint8 blue = blueTotal / 9;
+			setPixel(x, y, red, green, blue);
+
+		}
+	}
 }
 
 } /* namespace std */
